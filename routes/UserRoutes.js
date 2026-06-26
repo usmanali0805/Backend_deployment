@@ -1,10 +1,10 @@
-const express = require('express');
+import express from "express";
 const userroute = express.Router();
-const {addUserController , getUserController , UpdateUserController , deleteUserController} = require('../controllers/userController')
+import {addUserController , getUserController , UpdateUserController , deleteUserController} from '../controllers/userController.js'
 
 userroute.post('/', addUserController)
 userroute.get('/', getUserController)
 userroute.put('/', UpdateUserController)
 userroute.delete('/', deleteUserController)
 
-module.exports = userroute
+export default userroute

@@ -1,6 +1,9 @@
-const User = require("../models/usersModels")
-const jwt = require('jsonwebtoken')
-const Response = require("./response")
+// const User = require("../models/usersModels")
+// const jwt = require('jsonwebtoken')
+// const Response = require("./response")
+import User from "../models/usersModels.js";
+import jwt from "jsonwebtoken";
+import Response from "./response.js";
 
 const getUserController = async (req, res) => {
     // if(false){
@@ -74,4 +77,4 @@ const UpdateUserController = async (req, res) => {
 }
 const deleteUserController = async (req, res) => { }
 
-module.exports = { addUserController, getUserController, UpdateUserController, deleteUserController }
+export { addUserController, getUserController, UpdateUserController, deleteUserController }

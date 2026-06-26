@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --watch api/app.js"
+    "start": "node --watch app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
     "bcrypt": "^6.0.0",
     "cors": "^2.8.6",
@@ -21,6 +21,7 @@
     "mongoose": "^9.6.2",
     "moongoose": "^0.0.5",
     "nodemailer": "^9.0.1",
+    "serverless-http": "^4.0.0",
     "uuid": "^14.0.1"
   }
 }

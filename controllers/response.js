@@ -7,4 +7,4 @@ res.send({
 })
 }
 
-module.exports = Response
+export default Response

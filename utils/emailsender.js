@@ -1,5 +1,8 @@
-const nodemailer = require("nodemailer")
-require('dotenv').config()
+// const nodemailer = require("nodemailer")
+// require('dotenv').config()
+import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+dotenv.config();
 
 const emailConfig = {
     service: 'gmail',
@@ -27,4 +30,4 @@ async function sendEmailOTP(mail, otp) {
     }
 }
 
-module.exports = sendEmailOTP 
+export default sendEmailOTP;
